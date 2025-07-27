@@ -1,0 +1,183 @@
+body {
+font-family: Arial, sans-serif;
+background: #e6f0ff;
+text-align: center;
+}
+
+h1 {
+color: #082567;
+}
+
+#game-board {
+margin: 40px auto;
+width: 340px;
+display: grid;
+gap: 10px;
+grid-template-columns: repeat(4, 75px);
+grid-template-rows: repeat(4, 75px);
+}
+
+.card {
+background: #6497b1;
+color: #fff;
+font-size: 36px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+border-radius: 8px;
+font-weight: bold;
+transition: background 0.2s, transform 0.2s;
+user-select: none;
+}
+
+.card.flipped {
+background: #fff;
+color: #082567;
+cursor: default;
+box-shadow: 0 0 8px #08256765;
+transform: scale(1.12);
+}
+
+.card.matched {
+background: #c9ffd4;
+color: #388e3c;
+cursor: default;
+}
+
+/* Popup styles */
+#popup-overlay {
+position: fixed;
+top:0; left:0;
+width:100vw; height:100vh;
+background: rgba(0,0,0,0.52);
+z-index: 1000;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#popup-box {
+background: #fff;
+border-radius: 16px;
+width: 350px;
+box-shadow: 0 0 20px #0003;
+position: relative;
+padding: 32px 24px 20px 24px;
+text-align: left;
+color: #29415c;
+}
+#popup-box h2 {
+margin-top:0;
+color: #0b355e;
+font-size: 1.35em;
+text-align:center;
+}
+#popup-box ul {
+padding-left: 17px;
+font-size: 1.12em;
+margin-bottom: 8px;
+}
+#close-popup {
+position: absolute;
+right: 16px;
+top: 12px;
+font-size: 1.5em;
+color: #033373;
+cursor: pointer;
+font-weight: bold;
+transition: color 0.18s;
+}
+#close-popup:hover {
+color: #a31e1e;
+}
+
+#credits {
+margin: 30px 0 20px 0;
+color: #183858;
+font-size: 1.1em;
+text-align: center;
+}
+#insta-logo {
+display: inline-block;
+margin-top: 8px;
+transition: transform 0.2s;
+}
+#insta-logo svg {
+vertical-align: middle;
+}
+#insta-logo:hover {
+transform: scale(1.15) rotate(-10deg);
+}
+
+.card {
+transition: transform 0.5s cubic-bezier(.26,.53,.74,1.48), box-shadow 0.4s;
+transform-style: preserve-3d;
+  /* ... existing styles ... */
+}
+.card.flipped {
+transform: rotateY(180deg);
+  /* keeps the card face visible */
+}
+
+.card.matched {
+animation: glow 0.7s ease;
+}
+@keyframes glow {
+0%   { box-shadow: 0 0 0px #3ae374; }
+70%  { box-shadow: 0 0 24px #3ae374; }
+100% { box-shadow: 0 0 0px #3ae374; }
+}
+
+#button-container button {
+transition: transform 0.2s, background 0.3s;
+background: #2255a3;
+color: #fff;
+}
+#button-container button:hover {
+transform: scale(1.06);
+background: #3ae374;
+color: #161616;
+}
+
+#popup-box {
+animation: popIn 0.5s cubic-bezier(.68, -0.6, 0.32, 1.6);
+}
+@keyframes popIn {
+from { opacity: 0; transform: scale(0.85);}
+to   { opacity: 1; transform: scale(1);}
+}
+
+#name-popup-overlay {
+position: fixed;
+top:0; left:0;
+width:100vw; height:100vh;
+background: rgba(0,0,0,0.52);
+z-index: 1100;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#name-popup-box {
+background: #fff;
+border-radius: 16px;
+width: 320px;
+box-shadow: 0 0 20px #0003;
+position: relative;
+padding: 30px 20px 24px 20px;
+text-align: center;
+color: #29415c;
+animation: popIn 0.5s cubic-bezier(.68, -0.6, 0.32, 1.6);
+}
+#name-popup-box h2 {
+margin-top:0;
+color: #0b355e;
+font-size: 1.16em;
+margin-bottom: 8px;
+}
+#player-name-input:focus {
+outline: 2px solid #307eff44;
+}
+
+
+
+

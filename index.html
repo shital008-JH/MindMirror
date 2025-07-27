@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Memory Card Flip Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Player Name Popup -->
+<div id="name-popup-overlay" style="display:none;">
+    <div id="name-popup-box">
+    <h2>Enter Your Name</h2>
+    <p>Player, please fill your name below.</p>
+    <input id="player-name-input" type="text" placeholder="Your name" maxlength="18" autocomplete="off" style="padding:6px 8px;font-size:16px;width:75%;border-radius:6px;border:1px solid #ccc;">
+    <br><br>
+    <button id="player-name-submit" style="padding:8px 20px;font-size:16px;cursor:pointer;">OK</button>
+    </div>
+</div>
+
+<!-- Game Rules Popup -->
+<div id="popup-overlay">
+    <div id="popup-box">
+    <span id="close-popup">&times;</span>
+    <h2>Game Rules</h2>
+    <ul>
+        <li> To win the game you have to match all the cards.</li>
+        <li> 16 Cards + 16 Moves = Win or Loss.</li>
+        <li> Complete every game in less than 16 moves.</li>
+        <li> Every retry is a new challenge.</li>
+        <li> Play the game and check your memory power.</li>
+    </ul>
+    </div>
+</div>
+
+<h1>Memory Card Flip Game</h1>
+<div id="greeting" style="margin-bottom:16px; font-size:1.08em; color:#125678;"></div>
+<div id="game-board"></div>
+<div id="moves">Moves: 0</div>
+<div id="msg"></div>
+
+<!-- Credits section -->
+<div id="credits">
+    <p>Made by - <strong>Shital Singh </strong></p>
+    <a href="https://www.instagram.com/shital_sks_08/" target="_blank" id="insta-logo" title="Follow on Instagram" aria-label="Instagram">
+    <!-- Instagram SVG Logo -->
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <rect width="32" height="32" rx="8" fill="#fff"/>
+        <path d="M16 10a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm0 2a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm7-1a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm2 1.09c-.05-1.33-.28-2.51-1.11-3.35C23.6 6.28 22.41 6.05 21.09 6c-1.34-.05-5.34-.05-6.68 0-1.33.05-2.51.28-3.35 1.11C8.4 8.4 8.17 9.59 8.12 10.91c-.05 1.34-.05 5.34 0 6.68.05 1.33.28 2.51 1.11 3.35.83.83 2.01 1.06 3.35 1.11 1.34.05 5.34.05 6.68 0 1.33-.05 2.51-.28 3.35-1.11.83-.83 1.06-2.01 1.11-3.35.05-1.34.05-5.34 0-6.68zM16 20a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.5-8.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" fill="#E4405F"/>
+        <rect x="2" y="2" width="28" height="28" rx="6" stroke="#E4405F" stroke-width="2"/>
+    </svg>
+    </a>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
