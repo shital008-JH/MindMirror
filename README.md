@@ -34,16 +34,7 @@ You can download the app from here:
 7. Use the retry button to reshuffle cards and start a new game.
 
 ---
-
-## Project Structure
-
-├── index.html # Main HTML file containing the game markup and popups
-├── style.css # CSS file for styling, animations, and layout
-├── game.js # JavaScript handling game logic and UI interactions
-├── README.md # This documentation file
-
-
----
+ 
 
 ## Technologies Used
 
