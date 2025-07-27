@@ -17,6 +17,11 @@ Test and improve your memory skills by matching pairs of cards within limited mo
 - Responsive, clean UI with appealing card animation effects.
 
 ---
+## Download the APK
+You can download the app from here:
+[Download MindMirror] (https://www.upload-apk.com/en/LJxWPaPvwhbg9hR)
+
+---
 
 ## How to Play
 
